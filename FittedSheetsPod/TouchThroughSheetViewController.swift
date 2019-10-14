@@ -51,12 +51,12 @@ class TouchThroughView: UIView {
     }
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-        
-        if super.hitTest(point, with: event)?.accessibilityLabel == "Pull bar" {
-            return self
-        }
 
         if touchThroughEnable {
+            
+            if super.hitTest(point, with: event)?.accessibilityLabel == "Pull bar" {
+                return self
+            }
             
             guard let point = baseView?.convert(point, from: self) else {
                 return self
@@ -66,7 +66,7 @@ class TouchThroughView: UIView {
             
         }else {
             
-            return self
+            return super.hitTest(point, with: event)
             
         }
         

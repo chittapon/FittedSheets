@@ -9,8 +9,8 @@
     "Gordon Tucker": "gordon.michael.tucker@gmail.com"
   },
   "source": {
-    "git": "https://github.com/gordontucker/FittedSheets.git",
-    "tag": "1.4.5"
+    "git": "https://github.com/chittapon/FittedSheets.git",
+    "branch": "touch-through"
   },
   "platforms": {
     "ios": "9.0"

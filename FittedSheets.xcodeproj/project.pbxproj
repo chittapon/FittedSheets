@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4BAB59C235494E600B0F058 /* TouchThroughSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BAB59B235494E600B0F058 /* TouchThroughSheetViewController.swift */; };
 		F8034165212625DD00EAD717 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8034164212625DD00EAD717 /* AppDelegate.swift */; };
 		F8034167212625DD00EAD717 /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8034166212625DD00EAD717 /* ExamplesViewController.swift */; };
 		F803416A212625DD00EAD717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8034168212625DD00EAD717 /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C4BAB59B235494E600B0F058 /* TouchThroughSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchThroughSheetViewController.swift; sourceTree = "<group>"; };
 		F8034161212625DD00EAD717 /* FittedSheets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FittedSheets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8034164212625DD00EAD717 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8034166212625DD00EAD717 /* ExamplesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				F8034198212F15B600EAD717 /* SheetViewController.swift */,
+				C4BAB59B235494E600B0F058 /* TouchThroughSheetViewController.swift */,
 				F803419C212F208300EAD717 /* Yalta.swift */,
 				F84FF4AA21348A2900248951 /* SheetSize.swift */,
 				F84FF4AE2134A95300248951 /* InitialTouchPanGestureRecognizer.swift */,
@@ -488,6 +491,7 @@
 			files = (
 				F857D0A12204B776004C862F /* UIViewControllerExtension.swift in Sources */,
 				F857D09E2204B776004C862F /* SheetViewController.swift in Sources */,
+				C4BAB59C235494E600B0F058 /* TouchThroughSheetViewController.swift in Sources */,
 				F857D0A02204B776004C862F /* InitialTouchPanGestureRecognizer.swift in Sources */,
 				F857D09F2204B776004C862F /* Yalta.swift in Sources */,
 				F857D0A22204B776004C862F /* SheetSize.swift in Sources */,
@@ -663,7 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gordontucker.FittedSheets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -683,7 +687,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gordontucker.FittedSheets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -798,7 +802,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gordontucker.FittedSheetsPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -828,7 +832,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gordontucker.FittedSheetsPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

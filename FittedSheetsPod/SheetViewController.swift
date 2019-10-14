@@ -10,7 +10,7 @@ import UIKit
 
 public class SheetViewController: UIViewController {
     // MARK: - Public Properties
-    public private(set) var childViewController: UIViewController!
+    public var childViewController: UIViewController!
     
     public let containerView = UIView()
     /// The view that can be pulled to resize a sheeet. This includes the background. To change the color of the bar, use `handleView` instead

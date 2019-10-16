@@ -8,8 +8,13 @@
 
 import UIKit
 
+public protocol SheetViewControllerDelegate: class {
+    func heightDidChange(_ sheetViewController: SheetViewController, height: CGFloat)
+}
+
 public class SheetViewController: UIViewController {
     // MARK: - Public Properties
+    public weak var delegate: SheetViewControllerDelegate?
     public var childViewController: UIViewController!
     
     public let containerView = UIView()
@@ -417,6 +422,8 @@ public class SheetViewController: UIViewController {
             }
             
         }
+        
+        delegate?.heightDidChange(self, height: containerHeightConstraint.constant)
     }
     
     @objc func keyboardShown(_ notification: Notification) {

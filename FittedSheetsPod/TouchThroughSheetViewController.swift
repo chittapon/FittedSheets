@@ -54,21 +54,13 @@ class TouchThroughView: UIView {
 
         if touchThroughEnable {
             
-            if super.hitTest(point, with: event)?.accessibilityLabel == "Pull bar" {
-                return self
+            if super.hitTest(point, with: event) === subviews[1] {
+                return baseView?.hitTest(point, with: event)
             }
-            
-            guard let point = baseView?.convert(point, from: self) else {
-                return self
-            }
-            
-            return baseView?.hitTest(point, with: event)
-            
-        }else {
-            
-            return super.hitTest(point, with: event)
             
         }
+        
+        return super.hitTest(point, with: event)
         
     }
 }

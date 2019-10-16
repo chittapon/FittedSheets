@@ -180,6 +180,7 @@ public class SheetViewController: UIViewController {
         } else {
             self.containerHeightConstraint?.constant = self.height(for: size)
         }
+        delegate?.heightDidChange(self, height: height(for: size))
         self.containerSize = size
         self.actualContainerSize = size
     }
